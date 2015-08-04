@@ -458,7 +458,7 @@ static CGFloat CHTFloorCGFloat(CGFloat value) {
         
         for (UICollectionViewLayoutAttributes *attrs in attributes) {
             
-            if ([attrs representedElementKind] == UICollectionElementKindSectionHeader) {
+            if ([attrs representedElementKind] == CHTCollectionElementKindSectionHeader) {
                 
                 CGRect headerRect = [attrs frame];
                 headerRect.size.height = MAX(minY, headerSize.height + deltaY);
